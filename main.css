@@ -18,7 +18,7 @@ body {
 
 #summary
 {
-  list-style-type: none; 
+  list-style-type: none;
 }
 
 .social {
@@ -179,13 +179,15 @@ body {
 }
 
 .profile-img {
-  height:300px;
+  height:400px;
+  width:300px;
+  border-radius: 15px;
 }
 
 .nav-bar {
   top: 0;
   position: sticky;
-  z-index: 2;
+  z-index: 5;
 }
 
 .navbar {
@@ -210,6 +212,17 @@ body {
   color: #fff !important;
 }
 
+.i-img {
+  height: 40px;
+  width: 35px;
+}
+
+.skill {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
 .skills-bar h6{
   margin-bottom: 10px;
   font-weight: 600;
@@ -225,13 +238,7 @@ body {
 }
 
 .resume {
-  padding-top: 50px;
-  padding-bottom: 30px;
-  background-color: #f9f9f9;
-}
-
-.resume {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
   background-color: #f9f9f9;
 }
@@ -277,6 +284,12 @@ body {
   z-index: 4;
   margin-top: 4px;
   margin-left: 3px;
+}
+
+.projects {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f9f9f9;
 }
 
 .services {
