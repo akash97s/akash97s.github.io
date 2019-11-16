@@ -8,8 +8,33 @@ Akash Selvakumar Resume
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+<!-- <script src="scro"></script> -->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+ScrollOut({
+    targets: 'img'
+    // scrollingElement: ".profile-img"
+  });
+function sendEmail() { // pass parameter email
+  console.log("In sendemail");
+  Email.send({
+    SecureToken : "bcf0280b-e3ad-44e9-9027-78bdf8da7224",
+    To : 'akash15cs124@gmail.com',  // set as my email
+    From : "akashselvae7@gmail.com", // get as var
+    Subject : "Hello there",
+    Body : "I am Akash Selvakumar",
+    Attachments : [
+	{
+		name : "Akash Selvakumar Resume",
+		path : "https://drive.google.com/file/d/19EAZWsV35Zxg3sZkEondm4abNmawke-1/view?usp=sharing"
+	}]
+}).then(
+  message => alert(message)
+);
+}
+</script>
 </head>
 <body>
   <section id="header">
@@ -25,7 +50,7 @@ Akash Selvakumar Resume
       </ul>
     </div>
    <div class="container text-center">
-    <div class="user-box">
+    <div class="user-box" id="1">
       <img src="Akash.jpg">
       <!-- <h1>Akash Selvakumar</h1> -->
       <!-- start of svg anim -->
@@ -726,13 +751,13 @@ Akash Selvakumar Resume
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Me</a>
+        <a class="nav-link" href="#about">About Me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Experience</a>
+        <a class="nav-link" href="#experience">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
      </ul>
    </div>
@@ -741,7 +766,8 @@ Akash Selvakumar Resume
   <div class="about container" id="about">
     <div class="row">
       <div class="col-md-6 text-center">
-        <img src="My pic2.jpg" class= "profile-img">
+        <img src="My pic2.jpg" class="profile-img">
+        <!-- not displayed -->
       </div>
       <div class="col-md-6">
         <h3>Who am I?</h3>
@@ -795,7 +821,7 @@ Akash Selvakumar Resume
   </div>
 </div>
   <br>
-  <div class="resume" id="resume">
+  <div class="resume" id="experience">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -983,7 +1009,7 @@ Akash Selvakumar Resume
       <br>
     <a href= "https://drive.google.com/file/d/19EAZWsV35Zxg3sZkEondm4abNmawke-1/view?usp=sharing">
     <button type="button" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i>Resume</button></a>
-    <button type="button" class="btn btn-primary"><i class="fa fa-rocket" aria-hidden="true"></i>Hire me</button>
+    <button type="button" class="btn btn-primary" onClick= "sendEmail();"><i class="fa fa-rocket" aria-hidden="true"></i>Hire me</button>
     </div>
   </div>
   <div class="footer">

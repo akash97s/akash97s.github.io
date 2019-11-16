@@ -1,0 +1,76 @@
+<html>
+<head>
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!-- <script type="text/Javascript" src="ros.js"></script> -->
+<style>
+  body {
+    margin-left: 600px;
+  }
+  h1 {
+    transition: 0.5s;
+    /* transform-origin: right; */
+  }
+  .ig img {
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    /* transition: 2s; */
+    /* opacity: 0; */
+  }
+  .ig[data-scroll] {
+    transition: opacity 2s ease;
+    /* opacity: 0; */
+  }
+  .ig[data-scroll="in"] {
+    opacity: 1;
+  }
+  .ig[data-scroll="out"] {
+    opacity: 0;
+  }
+</style>
+</head>
+<body>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <br><br>
+  <div class="ig">
+  <img src="bg15.jpg">
+  </div>
+  <br><br>
+  <h2>lorem ipsum</h2>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
+  <script type="text/javascript">
+    ScrollOut ({
+      targets: '.ig',
+      threshold: 0.5,
+	    once: false
+    })
+  </script>
+</body>
+</html>

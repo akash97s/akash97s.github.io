@@ -4,79 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  font-family: Monotype Corsiva;
-  align-items: center;
-  min-height: 100vh;
-  color: #010101;
-  background: linear-gradient(45deg, black, gray );
-} */
-/* .container {
-  width:1200px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  margin: 0 auto;
-}
-.container .card {
-  position: relative;
-  width: 200px;
-  height: 300px;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.5);
-}
-.container .card .face {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .card .face.face2 {
-  background: #111;
-  transition: 0.5s;
-}
-.container .card .face.face2:before {
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  content: '';
-  position: absolute;
-  background: rgba(255, 255, 255, .1);
-}
-.container .card .face.face1 h3 {
-  margin: 0;
-  padding: 0;
-}
-.container .card .face.face1 {
-  box-sizing: border-box;
-  padding: 10px;
-}
-.container .card .face.face2 h3 {
-  margin: 0;
-  padding: 10;
-  font-size: 2em;
-  color: #fff;
-  transition: 0.5s;
-}
-.container .card:hover .face.face2 {
-  height: 60px;
-  transition: 0.5s;
-}
-.container .card:hover .face.face2 h3 {
-  font-size: 1.5em;
-  transition: 0.5s;
-} */
-
 #header {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg14.jpg);
@@ -166,7 +93,15 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
   position: absolute;
+  /* transform: scaleX(0); */
 }
+/* .user-box img {
+  transform: scaleX(0);
+} */
+
+/* .user-box img[data-scroll = "in"] {
+  transform: scaleX(1);
+} */
 
 .user-box img {
  border-radius: 50%;
@@ -255,16 +190,23 @@ body {
   height:400px;
   width:300px;
   border-radius: 15px;
+  transform: scaleX(0);
+}
+
+.profile-img [data-scroll = "in"] {
+    transform: scaleX(1);
 }
 
 .nav-bar {
   top: 0;
   position: sticky;
   z-index: 5;
+  /* display: block; */
 }
 
 .navbar {
   background-color: #000;
+  /* display: block; */
 }
 
 .navbar-brand img {
@@ -283,6 +225,17 @@ body {
 
 .nav-link {
   color: #fff !important;
+}
+
+/* .nav-item {
+  display: block;
+} */
+
+.nav-item a:hover {
+  /* background-color: #555; */
+  /* transition: 1s; */
+  color: white;
+  border-bottom: 2px solid white;
 }
 
 .i-img {
