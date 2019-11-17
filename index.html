@@ -28,7 +28,8 @@ function sendEmail() { // pass parameter email
     Attachments : [
 	{
 		name : "Akash Selvakumar Resume",
-		path : "https://drive.google.com/file/d/19EAZWsV35Zxg3sZkEondm4abNmawke-1/view?usp=sharing"
+		// path : "https://drive.google.com/file/d/19EAZWsV35Zxg3sZkEondm4abNmawke-1/view?usp=sharing"
+   data: "https://github.com/akash97s/akash97s.github.io/blob/master/Akash%20Selvakumar%20Resume.pdf"
 	}]
 }).then(
   message => alert(message)
@@ -1007,9 +1008,11 @@ function sendEmail() { // pass parameter email
         </div>
       </div>
       <br>
-    <a href= "https://drive.google.com/file/d/19EAZWsV35Zxg3sZkEondm4abNmawke-1/view?usp=sharing">
+      <!-- "https://drive.google.com/file/d/19EAZWsV35Zxg3sZkEondm4abNmawke-1/view?usp=sharing -->
+    <a href= "Resume.html" download="Akash Selvakumar Resume">
     <button type="button" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i>Resume</button></a>
     <button type="button" class="btn btn-primary" onClick= "sendEmail();"><i class="fa fa-rocket" aria-hidden="true"></i>Hire me</button>
+    <!-- <a href= "Akash Selvakumar Resume" download="Akash Selvakumar Resume">Resumeeeeeeeeeeeeeeeeee</a> -->
     </div>
   </div>
   <div class="footer">
