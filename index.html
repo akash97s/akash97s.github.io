@@ -17,20 +17,25 @@ ScrollOut({
     targets: 'img'
     // scrollingElement: ".profile-img"
   });
-function sendEmail() { // pass parameter email
+function sendEmail(var inpEmail) { // pass parameter email
   console.log("In sendemail");
   Email.send({
     SecureToken : "bcf0280b-e3ad-44e9-9027-78bdf8da7224",
-    To : 'akash15cs124@gmail.com',  // set as my email
+    To : inpEmail,  // set as my email
     From : "akashselvae7@gmail.com", // get as var
-    Subject : "Hello there",
-    Body : "I am Akash Selvakumar",
-    Attachments : [
-	{
-		name : "Akash Selvakumar Resume",
-		// path : "https://drive.google.com/file/d/19EAZWsV35Zxg3sZkEondm4abNmawke-1/view?usp=sharing"
-   data: "https://github.com/akash97s/akash97s.github.io/blob/master/Akash%20Selvakumar%20Resume.pdf"
-	}]
+    Subject : "",
+    Body :
+    "I am Akash Selvakumar, a graduate student at UMBC.
+    I am writing this email since you have visited my online porfolio and are interested in hiring me.
+    Kindly let me know about the further steps.
+    Thank you,
+    Akash Selvakumar",
+  //   Attachments : [
+	// {
+	// 	name : "Akash Selvakumar Resume",
+	// 	// path : "https://drive.google.com/file/d/19EAZWsV35Zxg3sZkEondm4abNmawke-1/view?usp=sharing"
+  //  data: "https://github.com/akash97s/akash97s.github.io/blob/master/Akash%20Selvakumar%20Resume.pdf"
+	// }]
 }).then(
   message => alert(message)
 );
@@ -767,7 +772,7 @@ function sendEmail() { // pass parameter email
   <div class="about container" id="about">
     <div class="row">
       <div class="col-md-6 text-center">
-        <img src="My pic2.jpg" class="profile-img">
+        <img src="mypic2.jpg" class="profile-img">
         <!-- not displayed -->
       </div>
       <div class="col-md-6">
@@ -1013,7 +1018,6 @@ function sendEmail() { // pass parameter email
       <!-- download="Akash Selvakumar Resume -->
     <button type="button" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i>Resume</button></a>
     <button type="button" class="btn btn-primary" onClick= "sendEmail();"><i class="fa fa-rocket" aria-hidden="true"></i>Hire me</button>
-    <!-- <a href= "Akash Selvakumar Resume" download="Akash Selvakumar Resume">Resumeeeeeeeeeeeeeeeeee</a> -->
     </div>
   </div>
   <div class="footer">
