@@ -28,7 +28,7 @@ ScrollOut({
 //  }
 
 function sendEmail() { // pass parameter email
-  console.log("In sendemail");
+  // console.log("In sendemail");
   var inp = document.getElementById('recipient-name').value;
   Email.send({
     SecureToken : "bcf0280b-e3ad-44e9-9027-78bdf8da7224",
@@ -43,10 +43,11 @@ function sendEmail() { // pass parameter email
   //  data: "https://github.com/akash97s/akash97s.github.io/blob/master/Akash%20Selvakumar%20Resume.pdf"
 	// }]
 }).then(
-  message => alert(message)
+  // message => alert("Please check your inbox")
 );
-console.log(inp);
-document.getElementById('mailConfirm').innerHTML = 'Please check your inbox';
+// console.log(inp);
+document.getElementById('mailConfirm').innerHTML = 'Please check your inbox!!!';
+document.getElementById('recipient-name').value = '';
 }
 </script>
 </head>
