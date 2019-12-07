@@ -1,6 +1,5 @@
 <html>
 <head>
-<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 <!-- <script type="text/Javascript" src="ros.js"></script> -->
 <style>
   body {
@@ -10,23 +9,34 @@
     transition: 0.5s;
     /* transform-origin: right; */
   }
-  .ig img {
+  img {
     width: 350px;
     height: 300px;
     border-radius: 20px;
     /* transition: 2s; */
     /* opacity: 0; */
   }
-  .ig[data-scroll] {
+  /* .ig[data-scroll] {
     transition: opacity 2s ease;
-    /* opacity: 0; */
-  }
-  .ig[data-scroll="in"] {
-    opacity: 1;
-  }
-  .ig[data-scroll="out"] {
     opacity: 0;
+    } */
+
+  /* .ig[data-scroll="in"] {
+    opacity: 1;
+  } */
+
+  [data-scroll] {
+    transition: all 2s;
   }
+  [data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  [data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
 </style>
 </head>
 <body>
@@ -45,9 +55,12 @@
   <h1>lorem ipsum</h1>
   <h1>lorem ipsum</h1>
   <h1>lorem ipsum</h1>
+  <h2>lorem ipsum</h2>
+  <h1>lorem ipsum</h1>
+  <h1>lorem ipsum</h1>
   <br><br>
   <div class="ig">
-  <img src="bg15.jpg">
+  <img src="bg15.jpg" data-scroll>
   </div>
   <br><br>
   <h2>lorem ipsum</h2>
@@ -65,12 +78,17 @@
   <h1>lorem ipsum</h1>
   <h1>lorem ipsum</h1>
   <h1>lorem ipsum</h1>
-  <script type="text/javascript">
-    ScrollOut ({
-      targets: '.ig',
-      threshold: 0.5,
-	    once: false
-    })
+  <div class="ig" data-scroll>
+  <img src="bg15.jpg">
+  </div>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script>
+    <!-- // ScrollOut({
+    //   targets: 'img',
+    //   threshold: 0.5,
+	  //   once: false
+    // }); -->
+    ScrollOut();
   </script>
 </body>
 </html>

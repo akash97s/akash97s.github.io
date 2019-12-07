@@ -14,6 +14,9 @@ body {
 
 #header img {
   margin-top: -100px;
+  /* height: 15%;
+  width: 15%; */
+
 }
 
 #summary
@@ -30,7 +33,7 @@ body {
   padding: 0;
   transform: translateX(-270px);
   list-style-type: none;
-  z-index: 7;
+  z-index: 10;
 }
 
 .social ul li {
@@ -106,6 +109,7 @@ body {
 .user-box img {
  border-radius: 15px 50px;
  width: 250px;
+ height: 275px;
  border: 1px solid #000;
 }
 
@@ -187,8 +191,8 @@ body {
 }
 
 .profile-img {
-  height:400px;
-  width:400px;
+  height: 475px;
+  width: 325px;
   border-radius: 15px;
   /* transform: scaleX(0); */
 }
@@ -246,7 +250,7 @@ body {
 .skill {
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
 }
 
 .skills-bar h6{
@@ -266,7 +270,7 @@ body {
 .resume {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
 }
 
 .timeline {
@@ -315,7 +319,7 @@ body {
 .projects {
   /* padding-top: 30px;
   padding-bottom: 30px; */
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
 }
 
 #pst {
@@ -417,7 +421,7 @@ body {
 
 
 .services-box {
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   padding: 20px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
