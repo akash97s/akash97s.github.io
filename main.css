@@ -568,3 +568,12 @@ body {
     color: red;
   }
 }
+
+.container #name_animation {
+  /* background-color: white;*/
+  margin-right: -14vh;
+}
+.container #main_image {
+  width: 30vw;
+  height: 40vh;
+}
